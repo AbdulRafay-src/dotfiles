@@ -13,12 +13,12 @@ opt.scrolloff = 10
 opt.ignorecase = true
 opt.smartcase = true
 opt.termguicolors = true
-opt.signcolumn = "yes"
+opt.signcolumn = 'yes'
 
-vim.opt.updatetime = 500
-vim.o.timeoutlen = 300
+opt.updatetime = 500
+-- vim.o.timeoutlen = 300
 
 -- keeping undo changes
 opt.undofile = true
 
-vim.opt.clipboard = 'unnamedplus'
+opt.clipboard = 'unnamedplus'
