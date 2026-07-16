@@ -17,3 +17,5 @@ opt.signcolumn = "yes"
 
 -- keeping undo changes
 opt.undofile = true
+
+vim.opt.clipboard = 'unnamedplus'
