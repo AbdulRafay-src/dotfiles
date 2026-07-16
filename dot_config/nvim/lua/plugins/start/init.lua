@@ -33,12 +33,16 @@ vim.pack.add({ gh('stevearc/conform.nvim') })
 -- AutoPairs
 vim.pack.add({ gh('windwp/nvim-autopairs') })
 
+-- CCC
+vim.pack.add({ gh('uga-rosa/ccc.nvim') })
+
 require('plugins.start.colors.srcery')
 require('plugins.start.guess-indent')
 require('plugins.start.lualine')
 require('plugins.start.lint')
 require('plugins.start.conform')
 require('plugins.start.autopairs')
+require('plugins.start.ccc')
 
 -- The order here is important:
 require('plugins.start.mason')
