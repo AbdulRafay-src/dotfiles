@@ -30,6 +30,11 @@ vim.pack.add({
 -- Formatter
 vim.pack.add({ gh('stevearc/conform.nvim') })
 
+-- Completion
+vim.pack.add({ gh('L3MON4D3/LuaSnip') })
+vim.pack.add({ gh('Saghen/blink.cmp') })
+vim.pack.add({ gh('saghen/blink.lib') })
+
 -- AutoPairs
 vim.pack.add({ gh('windwp/nvim-autopairs') })
 
@@ -41,6 +46,8 @@ require('plugins.start.guess-indent')
 require('plugins.start.lualine')
 require('plugins.start.lint')
 require('plugins.start.conform')
+require('plugins.start.luasnip')
+require('plugins.start.blink')
 require('plugins.start.autopairs')
 require('plugins.start.ccc')
 
