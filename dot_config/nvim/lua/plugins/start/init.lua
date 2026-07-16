@@ -20,8 +20,8 @@ vim.pack.add({ gh('nvim-lualine/lualine.nvim') })
 vim.pack.add({ gh('mfussenegger/nvim-lint') })
 
 -- Lsp, Mason & Friends
-vim.pack.add({ gh('neovim/nvim-lspconfig') })
 vim.pack.add({
+  gh('neovim/nvim-lspconfig'),
   gh('williamboman/mason.nvim'),
   gh('williamboman/mason-lspconfig.nvim'),
   gh('WhoIsSethDaniel/mason-tool-installer.nvim'),
@@ -30,12 +30,16 @@ vim.pack.add({
 -- Formatter
 vim.pack.add({ gh('stevearc/conform.nvim') })
 
+-- AutoPairs
+vim.pack.add({ gh('windwp/nvim-autopairs') })
+
 require('plugins.start.colors.srcery')
 require('plugins.start.guess-indent')
 require('plugins.start.lualine')
 require('plugins.start.lint')
+require('plugins.start.conform')
+require('plugins.start.autopairs')
 
 -- The order here is important:
 require('plugins.start.mason')
 require('plugins.start.lsp')
-require('plugins.start.conform')
