@@ -15,6 +15,9 @@ opt.smartcase = true
 opt.termguicolors = true
 opt.signcolumn = "yes"
 
+vim.opt.updatetime = 500
+vim.o.timeoutlen = 300
+
 -- keeping undo changes
 opt.undofile = true
 
