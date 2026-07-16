@@ -1,15 +1,28 @@
 local ok = pcall(vim.cmd.colorscheme, "srcery")
 
 if not ok then
-  -- If it failed because Srcery isn't downloaded yet, exit early!
-  -- No error window will pop up, and Neovim will use its default fallback theme.
   return
 end
 
--- If we got here, Srcery is downloaded and safe to configure!
 vim.g.srcery_italic = 1
 vim.g.srcery_bold = 1
-vim.g.srcery_underline = 1
+vim.g.srcery_underline = 0
 vim.g.srcery_inverse = 0
 
 vim.cmd.colorscheme('srcery')
+
+vim.api.nvim_set_hl(0, "Search", { bg = "#FAD02C", fg = "#000000", bold = true })
+vim.api.nvim_set_hl(0, "CurSearch", { bg = "#FF5733", fg = "#FFFFFF", bold = true })
+vim.api.nvim_set_hl(0, "IncSearch", { bg = "#FF5733", fg = "#FFFFFF", bold = true })--[[
+
+vim.api.nvim_create_autocmd("ColorScheme", {
+  callback = function()
+    vim.api.nvim_set_hl(0, "Search", { bg = "#FAD02C", fg = "#000000", bold = true })
+    vim.api.nvim_set_hl(0, "CurSearch", { bg = "#FF5733", fg = "#FFFFFF", bold = true })
+    vim.api.nvim_set_hl(0, "IncSearch", { bg = "#FF5733", fg = "#FFFFFF", bold = true })
+  end,
+})
+--]]
+
+-- vim.api.nvim_set_hl(0, "Search", { bg = "#FAD02C", fg = "#000000", bold = true })
+
