@@ -32,8 +32,12 @@ vim.pack.add({ gh('stevearc/conform.nvim') })
 
 -- Completion
 vim.pack.add({ gh('L3MON4D3/LuaSnip') })
-vim.pack.add({ gh('Saghen/blink.cmp') })
-vim.pack.add({ gh('saghen/blink.lib') })
+vim.pack.add({
+  {
+    src = gh('Saghen/blink.cmp'),
+    version = 'v1',
+  },
+})
 
 -- AutoPairs
 vim.pack.add({ gh('windwp/nvim-autopairs') })
