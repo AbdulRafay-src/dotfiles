@@ -8,6 +8,8 @@ end
 
 -- Colorschemes
 vim.pack.add({ gh('srcery-colors/srcery-vim') })
+
+-- GuessIndent
 vim.pack.add({ gh('NMAC427/guess-indent.nvim') })
 
 -- DevIcons
