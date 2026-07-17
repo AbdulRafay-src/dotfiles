@@ -5,6 +5,7 @@ end
 
 lint.linters_by_ft = {
   markdown = { 'markdownlint' },
+  c = { 'cpplint' },
 }
 
 -- Trigger linting automatically on save/enter
