@@ -14,7 +14,7 @@ vim.cmd.colorscheme('srcery')
 vim.api.nvim_set_hl(0, 'Search', { bg = '#FAD02C', fg = '#000000', bold = true })
 vim.api.nvim_set_hl(0, 'CurSearch', { bg = '#FF5733', fg = '#FFFFFF', bold = true })
 vim.api.nvim_set_hl(0, 'IncSearch', { bg = '#FF5733', fg = '#FFFFFF', bold = true })
-vim.api.nvim_set_hl(0, "gitcommitSummary", { fg = "#FFFFFF", bold = true, link = "NONE" })
+-- vim.api.nvim_set_hl(0, "gitcommitSummary", { fg = "#FFFFFF", bold = true, link = "NONE" })
 
 --[[
 vim.api.nvim_create_autocmd("ColorScheme", {
