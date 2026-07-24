@@ -35,4 +35,4 @@ vim.api.nvim_create_autocmd('PackChanged', {
   end,
 })
 
-require('plugins.start')
+require('plugins.config')
