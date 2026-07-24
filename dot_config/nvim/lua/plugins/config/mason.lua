@@ -15,7 +15,6 @@ vim.list_extend(ensure_installed, {
   'clang-format',
 
   'markdownlint',
-  'cpplint',
 })
 
 installer.setup({
